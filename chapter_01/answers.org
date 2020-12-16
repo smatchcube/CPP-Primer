@@ -214,3 +214,47 @@ If the input is =1 2 3 4 5 6= the program prints:
 * Exercise 1.19
 
 #+INCLUDE: "print_range_revised.cpp" src cpp
+
+* Exercise 1.20
+
+#+INCLUDE: "book_transactions_print.cpp" src cpp
+
+* Exercise 1.21
+
+#+INCLUDE: "sum_two_sales_item.cpp" src cpp
+
+* Exercise 1.22
+
+#+INCLUDE: "sum_sales_item.cpp" src cpp
+
+* Exercise 1.23
+
+#+INCLUDE: "consecutive_count_ISBN.cpp" src cpp
+
+* Exercise 1.24
+
+Here is my transactions used as input for the previous program:
+#+BEGIN_EXAMPLE
+0-201-78345-X 3 20.00
+0-201-78345-X 2 25.00
+0-201-70353-X 4 24.99
+0-201-70353-X 2 10.99
+0-201-70353-X 1 40.00
+#+END_EXAMPLE
+
+The program outputs:
+#+BEGIN_EXAMPLE
+0-201-78345-X ISBN occurs 2 times
+0-201-70353-X ISBN occurs 3 times
+#+END_EXAMPLE
+
+* Exercise 1.25
+
+#+INCLUDE "bookstore.cpp" src cpp
+
+Using the same input as in the previous exercise we get:
+
+#+BEGIN_EXAMPLE
+0-201-78345-X 5 110 22
+0-201-70353-X 7 161.94 23.1343
+#+END_EXAMPLE
