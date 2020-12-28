@@ -1,0 +1,25 @@
+* Exercise 3.1
+
+#+INCLUDE: sum_50_100_using.cpp src cpp
+
+* Exercise 3.2
+
+#+INCLUDE: read_line.cpp src cpp
+
+#+INCLUDE: read_word.cpp src cpp
+
+* Exercise 3.3
+
+With the =string= input operator, both leading spaces and trailing whitespaces are discarded but no whitespace is discard with =getline=.
+
+* Exercise 3.4
+
+#+INCLUDE: string_comparison.cpp src cpp
+
+#+INCLUDE: string_comparison_bis.cpp src cpp
+
+* Exercise 3.5
+
+#+INCLUDE: concatenate.cpp src cpp
+
+#+INCLUDE: concatenate_bis.cpp src cpp
