@@ -1,12 +1,12 @@
 * Exercise 3.1
 
-#+INCLUDE: sum_50_100_using.cpp src cpp
+#+INCLUDE: "sum_50_100_using.cpp" src cpp
 
 * Exercise 3.2
 
-#+INCLUDE: read_line.cpp src cpp
+#+INCLUDE: "read_line.cpp" src cpp
 
-#+INCLUDE: read_word.cpp src cpp
+#+INCLUDE: "read_word.cpp" src cpp
 
 * Exercise 3.3
 
@@ -14,12 +14,107 @@ With the =string= input operator, both leading spaces and trailing whitespaces a
 
 * Exercise 3.4
 
-#+INCLUDE: string_comparison.cpp src cpp
+#+INCLUDE: "string_comparison.cpp" src cpp
 
-#+INCLUDE: string_comparison_bis.cpp src cpp
+#+INCLUDE: "string_comparison_bis.cpp" src cpp
 
 * Exercise 3.5
 
-#+INCLUDE: concatenate.cpp src cpp
+#+INCLUDE: "concatenate.cpp" src cpp
 
-#+INCLUDE: concatenate_bis.cpp src cpp
+#+INCLUDE: "concatenate_bis.cpp" src cpp
+
+* Exercise 3.6
+
+#+INCLUDE: "to_X.cpp" src cpp
+
+* Exercise 3.7
+
+I think it would not mutate the =string= as we would modify only a copy of each character.
+
+Here is the previous program modified. With some compiler options we get a warning.
+
+#+INCLUDE: "do_nothing.cpp" src cpp
+
+The output is the =string= unmodified as expected.
+
+* Exercise 3.8
+
+#+INCLUDE: "to_X_while.cpp" src cp
+
+#+INCLUDE: "to_X_traditional_for.cpp" src cpp
+
+I prefer the range =for= approach as it is less error prone (no need to take care of bounds), it's faster to write and easier to read.
+
+* Exercise 3.9
+
+This program is not valid because =s= is initialized to the empty =string= so we can't use the subscript operator (it's undefined behavior).
+
+* Exercise 3.10
+
+#+INCLUDE: "remove_punctuation.cpp" src cpp
+
+* Exercise 3.11
+
+Yes this range =for= is legal. The type of =c= is =const int&=, we can't test this by trying to assign to =c= and see the compiler error.
+
+* Exercise 3.12
+
+(a) Legal, =ivec= is initialized to an empty =vector= of =vector<int>=.
+
+(b) Illegal, =svec= hold strings not vectors of =int=.
+
+(c) Legal, =svec= is initialized to a =vector= of ten strings of value ="null"=.
+
+* Exercise 3.13
+
+(a) No elements.
+
+(b) Ten elements, each of value $0$.
+
+(c) Ten elements, each of value $42$.
+
+(d) One element of value $10$.
+
+(e) Two elements, the first one of value $10$ and the second with the value $42$.
+
+(f) Ten elements, each is the empty =string=.
+
+(g) Ten elements, each is the =string= ="hi"=.
+
+* Exercise 3.14
+
+#+INCLUDE: "store_ints.cpp" src cpp
+
+* Exercise 3.15
+
+#+INCLUDE: "store_strings.cpp" src cpp
+
+* Exercise 3.16
+
+#+INCLUDE: "check_vectors.cpp" src cpp
+
+* Exercise 3.17
+
+#+INCLUDE: "print_words.cpp" src cpp
+
+* Exercise 3.18
+
+This program is illegal. We might fix it by using the =push_back= member function:
+
+#+BEGIN_SRC cpp
+vector<int> ivec;
+ivec.push_back(42);
+#+END_SRC
+
+* Exercise 3.19
+
+#+INCLUDE: "three_ways.cpp" src cpp
+
+The first way is preferred as it's easier to read and more safe.
+
+* Exercise 3.20
+
+#+INCLUDE: "adjacent_pair_sum.cpp" src cpp
+
+#+INCLUDE: "symmetric_sum.cpp" src cpp

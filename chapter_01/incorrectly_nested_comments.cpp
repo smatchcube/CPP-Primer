@@ -5,9 +5,9 @@
 int main()
 {
     /*
-    int main() {
-	return 0; /* no error status */
-    }
-    */
-    return 0;
+      int main() {
+      return 0; /* no error status */
+}
+*/
+return 0;
 }

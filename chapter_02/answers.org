@@ -1,6 +1,6 @@
 * Exercise 2.1
 
-These different signed integral types can have a different size resulting in different minimum and maximum value that can be holded.
+These different signed integral types can have a different size resulting in different minimum and maximum value that can be held.
 An unsigned type can only represents values greater than or equal to zero. On the other hand signed integral types can hold negative values.
 The =float= and =double= types have different sizes. The =double= type is generally bigger and provides more precision than the =float= type.
 

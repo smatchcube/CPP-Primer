@@ -8,7 +8,7 @@ int main()
     std::string s, tmp;
 
     while (std::cin >> tmp)
-	s += tmp;
+        s += tmp;
 
     std::cout << s << std::endl;
 

@@ -8,6 +8,6 @@ int main()
     std::cout << "Enter book sales transactions:" << std::endl;
     Sales_item book;
     while (std::cin >> book)
-	std::cout << book << std::endl;
+        std::cout << book << std::endl;
     return 0;
 }
