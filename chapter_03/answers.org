@@ -118,3 +118,120 @@ The first way is preferred as it's easier to read and more safe.
 #+INCLUDE: "adjacent_pair_sum.cpp" src cpp
 
 #+INCLUDE: "symmetric_sum.cpp" src cpp
+
+* Exercise 3.21
+
+#+INCLUDE: "print_size_content.cpp" src cpp
+
+* Exercise 3.22
+
+#+INCLUDE: "print_text_uppercase.cpp" src cpp
+
+* Exercise 3.23
+
+#+INCLUDE: "twice_iterator.cpp" src cpp
+
+* Exercise 3.24
+
+#+INCLUDE: "adjacent_pair_sum_iterator.cpp" src cpp
+
+#+INCLUDE: "symmetric_sum_iterator.cpp" src cpp
+
+* Exercise 3.25
+
+#+INCLUDE: "grades_clusters.cpp" src cpp
+
+* Exercise 3.26
+
+If we wrote =mid = (beg + end) / 2;= the program could never end if the value is not found (=mid= could not change and never be equal to =end=).
+
+* Exercise 3.27
+
+(a) Illegal, =buf_size= is not a constant expression.
+
+(b) Legal, =4 * 7 - 14= is a constant expression with value greater than $0$.
+
+(c) Illegal, =txt_size()= is not a constant expression.
+
+(d) Illegal, =st= must be able to also hold the null character ='\0'= so must be at least able to store $12$ characters.
+
+* Exercise 3.28
+
+=sa= is an array of $10$ empty strings.
+=ia= is an array of $10$ zero ints.
+=sa2= is an array of $10$ empty strings.
+=ia2= is an array of $10$ ints with undefined values.
+
+* Exercise 3.29
+
+Arrays can only store a fix amount of values, the size must be known at compile time and arrays can't be of $0$ size.
+
+* Exercise 3.30
+
+=ia= is an array of size =10= so the valid subscript values are positive integers strictly inferior to =10=. Here in the last execution of the =for= loop we are using a subscript equal to =10= hence the undefined behavior of this code.
+
+* Exercise 3.31
+
+#+INCLUDE: "array_of_positions.cpp" src cpp
+
+* Exercise 3.32
+
+#+INCLUDE: "copy_array.cpp" src cpp
+
+#+INCLUDE: "copy_vector.cpp" src cpp
+
+* Exercise 3.33
+
+The behavior of the program would be undefined.
+
+* Exercise 3.34
+
+This code assign =p2= to =p1=, this code is always legal as long as =p1= and =p2= are valid pointers.
+
+* Exercise 3.35 
+
+#+INCLUDE: "set_to_zero.cpp" src cpp
+
+* Exercise 3.36
+
+#+INCLUDE: "array_equality.cpp" src cpp
+
+#+INCLUDE: "vector_equality.cpp" src cpp
+
+* Exercise 3.37
+
+This program has undefined behavior because it will try to read past the end of the array so anything can happen.
+
+* Exercise 3.38
+
+It's meaningless because if we think of pointers as addresses of array elements, subtracting two addresses would give the offset and could be useful information but adding two addresses would make no sense as it would generally depend on the address of the first element of the array.
+
+* Exercise 3.39 
+
+#+INCLUDE: "compare_strings.cpp" src cpp
+
+#+INCLUDE: "compare_cstrings.cpp" src cpp
+
+* Exercise 3.40
+
+#+INCLUDE: "cstrings_cat.cpp" src cpp
+
+* Exercise 3.41
+
+#+INCLUDE: "vector_from_array.cpp" src cpp
+
+* Exercise 3.42
+
+#+INCLUDE: "array_from_vector.cpp" src cpp
+
+* Exercise 3.43
+
+#+INCLUDE: "for_loop.cpp" src cpp
+
+* Exercise 3.44
+
+#+INCLUDE: "for_loop_type_alias.cpp" src cpp
+
+* Exercise 3.45
+
+#+INCLUDE: "for_loop_auto.cpp" src cpp
