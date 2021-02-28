@@ -1,0 +1,10 @@
+* Exercise 5.1
+A null statement is the statement =;= doing nothing. We might use a null statement when a statement is required but the logic or our program doesn't (for example in a =for= or =while= loop).
+
+* Exercise 5.2
+A block is a sequence of statement surrounded by a pair of curly braces. We might use a block when we want multiple statements but the language only accept one (for example in an =if=, =while=, or =for= statement).
+
+* Exercise 5.3
+#+INCLUDE: "comma_replacing_block.cpp" src cpp
+
+This rewrite diminishes the readability of this code because we are hiding multiples statements inside one statement, it's better to use a block.
